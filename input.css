@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Public Sans", sans-serif;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@media not all and (min-width: 426px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-menu.active {
+    display: flex;
+    backdrop-filter: brightness(0.75);
+    height: 1000vh;
+  }
+
+  .nav-bar.active {
+  }
+
+  .hamburger-button {
+    display: flex;
+  }
+
+  .hamburger-button.active {
+    display: none;
+  }
+
+  .close-button {
+    display: none;
+  }
+
+  .close-button.active {
+    display: flex;
+  }
+
+  body.active {
+  }
+}
